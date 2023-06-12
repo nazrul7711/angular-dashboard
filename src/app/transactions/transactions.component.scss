@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 0.0002px solid $black-color;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+td img {
+  border-radius: 50%;
+}
+.withImage {
+  padding-left: 10px;
+}
+table td {
+  align-items: center;
+}
+.dropdown--div {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.red-text {
+  color: $red-color;
+}
+
+.green-text {
+  color: $green-color;
+}
+.dropdown--div option{
+  color: red;
+}

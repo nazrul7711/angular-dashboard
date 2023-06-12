@@ -1,0 +1,25 @@
+<div class="container">
+  <h3>Quick Transfer</h3>
+  <div class="img-parent--div" #imgdiv>
+    <div id="a" class="imgdiv" *ngFor="let item of imgArr">
+      <img
+        src="https://images.pexels.com/photos/12407311/pexels-photo-12407311.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="model wearing hat"
+      />
+    </div>
+  </div>
+  <button class="right-arrow" (click)="scrollList(imgdiv)">
+    <mat-icon>
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </mat-icon>
+  </button>
+  <div class="card--div">
+    <h4>Card Number</h4>
+    <p>VISA</p>
+    <input type="text" placeholder="0818 7183 0713 2514" />
+  </div>
+  <div class="button--div">
+    <button>Send Money</button>
+    <button>Save As Draft</button>
+  </div>
+</div>

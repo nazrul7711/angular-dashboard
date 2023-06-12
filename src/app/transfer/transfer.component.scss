@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: $pure-white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px $box-shadow-color;
+  padding: 15px;
+  flex-direction: column;
+  position: relative;
+}
+.card--div {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px;
+}
+.button--div {
+  display: flex;
+  justify-content: space-between;
+}
+.button--div button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button--div :first-child {
+  background-color: $blue-color;
+  color: $pure-white;
+}
+.button--div :last-child {
+  background-color: $light-grey;
+  color: $grey-color;
+}
+.card--div input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid $blue-color;
+  outline: none;
+}
+.card--div p {
+  position: absolute;
+  top: 145px;
+  right: 25px;
+  color: $grey-color;
+}
+.right-arrow {
+  border: none;
+  color: $pure-white;
+  background-color: transparent;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.imgdiv {
+  height: 30px;
+  width: 30px;
+  flex: 0 0 auto;
+}
+.imgdiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.img-parent--div {
+  display: flex;
+  gap: 5px;
+  overflow-x: scroll;
+}
+.img-parent--div::-webkit-scrollbar {
+  display: none;
+}

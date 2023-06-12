@@ -1,0 +1,34 @@
+@import "../styles/variables";
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(46, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  background-color: $light-grey;
+  padding: 20px;
+}
+.container app-balance {
+  grid-column: 3/32;
+  grid-row: 1/9;
+}
+
+.container app-card-detail {
+  grid-column: 35/44;
+  grid-row: 1/19;
+}
+.container app-transfer {
+  grid-column: 35/44;
+  grid-row: 20/30;
+}
+.container app-finances {
+  grid-column: 3/20;
+  grid-row: 10/19;
+}
+.container app-all-expenses {
+  grid-column: 21/32;
+  grid-row: 10/19;
+}
+.container app-transactions {
+  grid-column: 3/32;
+  grid-row: 22/30;
+}

@@ -1,0 +1,88 @@
+@import "../../styles/variables";
+* {
+  box-sizing: border-box;
+}
+.first--div {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px -2px $box-shadow-color;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px $box-shadow-color;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.image-div {
+  width: 100%;
+}
+.container--header {
+  display: flex;
+  justify-content: space-between;
+}
+.balance--div {
+  display: flex;
+  flex-direction: column;
+}
+.balance-detail--div {
+  display: flex;
+}
+.currency-detail--div {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 23px;
+}
+.button--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue-color;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: $white-color;
+}
+.balance-detail--div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.increase-decrease--div {
+  display: flex;
+  flex: 2;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.increase-decrease--div p:first-child {
+  margin-right: 10px;
+}
+.increase-decrease--div mat-icon {
+  font-size: small;
+  margin-top: 10px;
+}
+.increase-decrease--div p:first-child {
+  display: flex;
+  align-items: center;
+  color: $green-color;
+  font-size: small;
+  font-weight: 900;
+}
+.increase-decrease--div p:last-child {
+  display: flex;
+  align-items: center;
+  color: $red-color;
+}

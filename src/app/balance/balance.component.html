@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="item" *ngFor="let dt of data; index as i">
+    <div class="top" #refer>
+      <div class="circle--div"></div>
+      <mat-icon class="two">
+        <span class="material-symbols-outlined circle">
+          {{ icons[i] }}
+        </span>
+      </mat-icon>
+      <mat-icon>
+        <span class="material-symbols-outlined"> more_vert </span>
+      </mat-icon>
+    </div>
+
+    <h4>{{ dt[0] }}</h4>
+    <h2>${{ dt[1] }}</h2>
+  </div>
+</div>

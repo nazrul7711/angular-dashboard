@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="top">
+    <h3>Transactions</h3>
+    <p>Recent</p>
+  </div>
+  <table *ngFor="let user of users; let i = index">
+    <tr *ngIf="i < 3">
+      <td class="withImage">
+        <img
+          src="https://images.pexels.com/photos/16819138/pexels-photo-16819138/free-photo-of-photo-of-a-young-man-with-tousled-hair-and-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Girl in a jacket"
+          width="50"
+          height="50"
+        />
+      </td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.company }}</td>
+      <td>{{ user.date }}</td>
+      <td>{{ user.time }}</td>
+      <td>
+        <div>
+          <select class="dropdown--div" [(ngModel)]="user.status">
+            <option [ngClass]="{ 'green-text': true }">
+              {{ user.status }}
+            </option>
+            <option [ngClass]="{ 'red-text': true }">{{ user.status }}</option>
+          </select>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

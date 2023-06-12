@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+* {
+  box-sizing: border-box;
+}
+.container {
+  background-color: $pure-white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 265px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.doughnut--div {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header--div {
+  position: absolute;
+  display: flex;
+}
+.dropdown--div {
+  margin-left: 100px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.salary-breakup--div {
+  position: absolute;
+  bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.salary-breakup--div *{
+  margin-right: 25px;
+}
+h4{
+  font-weight: bolder;
+}
